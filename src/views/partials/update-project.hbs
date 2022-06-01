@@ -1,0 +1,107 @@
+<form class="box" action="/project/{{project._id}}/updateproject" method="POST">
+  <label class="label">Update Project Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Name</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Title" value="{{project.projectTitle}}" name="projectTitle">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Project Style</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Style" value="{{project.styleDescription}}" name="styleDescription">
+      </div>
+    </div>
+  </div>
+    <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Latitude</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Latitude" value="{{project.latitude}}" name="latitude">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Longitude</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Longitude" value="{{project.longitude}}" name="longitude">
+      </div>
+    </div>
+  </div>
+    <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Area (sq. meters)</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Area (Sq. Meters)" value="{{project.areaSqM}}" name="areaSqM">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Project Budget (€)</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Approximate Price (€)" value="{{project.priceEu}}" name="priceEu">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Description</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Description" value="{{project.projectDescription}}" name="projectDescription">
+      </div>
+    </div>
+  </div>
+    <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Image 1 URL</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Image1 URL" value={{project.image1}} name="image1">
+      </div>
+    </div>
+  </div>
+      <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Image 2 URL</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Image2 URL" value={{project.image2}} name="image2">
+      </div>
+    </div>
+  </div>
+      <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Image 3 URL</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Image3 URL" value={{project.image3}} name="image3">
+      </div>
+    </div>
+  </div>
+    <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Visability</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" name="visability">
+          <option value="Public">Public</option>
+          <option value="Private">Private</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Project</button>
+</form>

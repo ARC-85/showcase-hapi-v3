@@ -1,0 +1,62 @@
+{
+  "portfolios": [
+    {
+      "userid": "c66d0249-e82c-498f-a613-a2ab0510ba08",
+      "title": "Budget",
+      "portfolioCategory": "New Builds",
+      "_id": "09d9817f-47fa-4c75-b26d-a2559504bed2"
+    },
+    {
+      "title": "Budget",
+      "portfolioCategory": "Extensions",
+      "userid": "string",
+      "projects": [
+        {
+          "projectTitle": "Cartoor Farmhouse",
+          "latitude": "53.02",
+          "longitude": "-9.38",
+          "styleDescription": "Modern",
+          "projectDescription": "An old farmhouse extension",
+          "areaSqM": 40,
+          "priceEu": 80000,
+          "image1": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "image2": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "image3": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "portfolioid": "string",
+          "_id": "string",
+          "__v": 0
+        }
+      ],
+      "_id": "196a001c-caef-4dd2-969b-89acc39f28a8"
+    },
+    {
+      "title": "Budget",
+      "portfolioCategory": "Extensions",
+      "userid": "string",
+      "projects": [
+        {
+          "projectTitle": "Cartoor Farmhouse",
+          "latitude": "53.02",
+          "longitude": "-9.38",
+          "styleDescription": "Modern",
+          "projectDescription": "An old farmhouse extension",
+          "areaSqM": 40,
+          "priceEu": 80000,
+          "image1": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "image2": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "image3": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+          "portfolioid": "string",
+          "_id": "string",
+          "__v": 0
+        }
+      ],
+      "_id": "1efde811-ad65-412f-bf47-bef7aa9d14ce"
+    },
+    {
+      "userid": "39a0e9e7-4c73-447c-888f-9b74189d67d9",
+      "title": "budget",
+      "portfolioCategory": "Extensions",
+      "_id": "58f31fc1-6593-4a0d-b1b4-4859e9d4a566"
+    }
+  ]
+}

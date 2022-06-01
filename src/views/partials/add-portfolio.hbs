@@ -1,0 +1,33 @@
+<div class="box box-link-hover-shadow">
+<form action="/dashboard/addportfolio" method="POST">
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">New Portfolio</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter portfolio title" name="title">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Portfolio Category</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" name="portfolioCategory">
+          <option value="Extensions">Extensions</option>
+          <option value="New Builds">New Builds</option>
+          <option value="Renovations">Renovations</option>
+          <option value="Landscaping">Landscaping</option>
+          <option value="Commercial">Commercial</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button is-link">Add Portfolio</button>
+</form>
+</div>

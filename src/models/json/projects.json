@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "projectTitle": "Cartoor Farmhouse",
+      "latitude": "53.3378",
+      "longitude": "-9.18",
+      "styleDescription": "Modern",
+      "projectDescription": "An old farmhouse in Moycullen area",
+      "areaSqM": 40,
+      "priceEu": 70000,
+      "image1": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image2": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image3": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "_id": "178af194-0962-403c-a18a-a2b8c41caa21",
+      "portfolioid": "09d9817f-47fa-4c75-b26d-a2559504bed2"
+    },
+    {
+      "projectTitle": "Cartoor Farmhouse",
+      "latitude": "53.02",
+      "longitude": "-9.38",
+      "styleDescription": "Modern",
+      "projectDescription": "An old farmhouse extension",
+      "areaSqM": 40,
+      "priceEu": 80000,
+      "image1": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image2": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image3": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "portfolioid": "{id}",
+      "_id": "7dbc808d-7ed8-4c89-bcba-d488765882f2"
+    },
+    {
+      "projectTitle": "Cartoor Farmhouse",
+      "latitude": "53.3378",
+      "longitude": "-9.18",
+      "styleDescription": "Modern",
+      "projectDescription": "An old farmhouse extension in Moycullen area",
+      "areaSqM": 40,
+      "priceEu": 70000,
+      "image1": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image2": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "image3": "https://res.cloudinary.com/whodunya/image/upload/v1648074501/showcase/house_icon_xtwll0.jpg",
+      "_id": "801624b7-7ebe-4eb9-a6bc-edb0bf5363e1",
+      "portfolioid": "58f31fc1-6593-4a0d-b1b4-4859e9d4a566"
+    }
+  ]
+}

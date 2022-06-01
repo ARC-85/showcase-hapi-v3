@@ -1,0 +1,77 @@
+<form class="box" action="/portfolio/{{portfolio._id}}/addproject" method="POST">
+  <label class="label">Enter New Project Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Title</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Title" name="projectTitle">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Project Style</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Style" name="styleDescription">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Latitude</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Latitude" name="latitude">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Longitude</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Longitude" name="longitude">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Area (sq. meters)</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Area (Sq. Meters)" name="areaSqM">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Project Budget (€)</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Approximate Price (€)" name="priceEu">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Description</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Project Description" name="projectDescription">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Visability</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" name="visability">
+          <option value="Public">Public</option>
+          <option value="Private">Private</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Add Project</button>
+</form>

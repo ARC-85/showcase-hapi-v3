@@ -1,0 +1,155 @@
+{{> menu-client}}
+
+<section class="section">
+  <div class="title">
+    {{project.projectTitle}}
+  </div>
+  <div id="ratingsection" class="subtitle">
+    Average Rating: {{averageRating}} out of 5 Stars
+  </div>
+  <div id="favourited" class="subtitle">
+    Favourited (see My Favourites)
+  </div>
+</section>
+
+<section id="addfavouritesection" class="section">
+  <div class="box box-link-hover-shadow">
+    <a href="/addfavourite/{{project._id}}" class="button is-link">Add To Favourites</a>
+  </div>
+</section>
+
+
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          Project Title
+        </td>
+        <td>
+          {{project.projectTitle}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Vendor Name
+        </td>
+        <td>
+          {{project.vendorFirstName}} {{project.vendorLastName}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Latitude
+        </td>
+        <td>
+          {{project.latitude}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Longitude
+        </td>
+        <td>
+          {{project.longitude}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Style
+        </td>
+        <td>
+          {{project.styleDescription}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Description
+        </td>
+        <td>
+          {{project.projectDescription}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Area (sq. meters)
+        </td>
+        <td>
+          {{project.areaSqM}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Budget (€)
+        </td>
+        <td>
+          {{project.priceEu}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Image 1
+        </td>
+        <td>
+          <img src={{project.image1}}>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Image 2
+        </td>
+        <td>
+          <img src={{project.image2}}>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Image 3
+        </td>
+        <td>
+          <img src={{project.image3}}>
+        </td>
+      </tr>
+  </tbody>
+</table>
+
+<section id="addreviewsection" class="section">
+  {{> add-review}}
+</section>
+
+<section id="listreviewsection" class="section">
+  {{> list-all-reviews}}
+</section>
+
+<script>
+  
+  var clientReviewLength = {{clientProjectReviews.length}};
+  if (clientReviewLength > 0) {
+    document.getElementById("addreviewsection").style.display="none";
+  }
+
+  var clientFavouriteLength = {{clientProjectFavourite.length}};
+  if (clientFavouriteLength > 0) {
+    document.getElementById("addfavouritesection").style.display="none";
+    document.getElementById("favourited").style.display="";
+  } else {
+    document.getElementById("addfavouritesection").style.display="";
+    document.getElementById("favourited").style.display="none";
+  }
+
+  var reviewLength = {{reviews.length}};
+  if (reviewLength > 0) {
+    document.getElementById("listreviewsection").style.display="";
+    document.getElementById("ratingsection").style.display="";
+  } else {
+    document.getElementById("listreviewsection").style.display="none";
+    document.getElementById("ratingsection").style.display="none";
+  }
+
+</script>
+

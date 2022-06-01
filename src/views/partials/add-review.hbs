@@ -1,0 +1,41 @@
+<form class="box" action="/clientproject/{{project._id}}/addreview" method="POST">
+  <label class="label">Enter New Review Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Project Title</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Review Title" name="reviewTitle">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Rating Out of 5 Stars</label>
+      </div>
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Comments or Questions</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Comments or Questions" name="comment">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Add Review</button>
+</form>
+
+
+

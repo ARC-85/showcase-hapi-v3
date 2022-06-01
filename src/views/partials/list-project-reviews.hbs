@@ -1,0 +1,37 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Review Title</th>
+      <th>Rating</th>
+      <th>Comment</th>
+      <th>Reply</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each reviews}}
+      <tr>
+        <td>
+          {{reviewTitle}}
+        </td>
+        <td>
+          {{rating}}
+        </td>
+        <td>
+          {{comment}}
+        </td>
+        <td>
+          <form class="box" action="/project/{{projectid}}/updatereply/{{_id}}" method="POST">
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <input class="input" type="text" placeholder="Enter Reply" value="{{reply}}" name="reply">
+                </div>
+              </div>
+              <button class="button is-primary">Update Reply</button>
+            </div>
+          </form>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

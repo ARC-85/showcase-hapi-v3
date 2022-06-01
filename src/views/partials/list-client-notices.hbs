@@ -1,0 +1,52 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Notice Date</th>
+      <th>Notice Title</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Project Category</th>
+      <th>Project Style</th>
+      <th>Vendor Category</th>
+      <th>Notice Details</th>
+      <th>Delete Notice</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each notices}}
+      <tr>
+        <td>
+          {{noticeDate}}
+        </td>
+        <td>
+          {{noticeTitle}}
+        </td>
+        <td>
+          {{noticeLatitude}}
+        </td>
+        <td>
+          {{noticeLongitude}}
+        </td>
+        <td>
+          {{noticeCategory}}
+        </td>
+        <td>
+          {{noticeStyle}}
+        </td>
+        <td>
+          {{vendorCategory}}
+        </td>
+        <td>
+          <a href="/noticeupdate/{{_id}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/deletenotice/{{_id}}" class="ui icon button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

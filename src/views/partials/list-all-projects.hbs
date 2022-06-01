@@ -1,0 +1,47 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Project Title</th>
+      <th>Category</th>
+      <th>Vendor Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Project Style</th>
+      <th>Average Rating</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each projects}}
+      <tr>
+        <td>
+          {{projectTitle}}
+        </td>
+        <td>
+          {{portfolioCategory}}
+        </td>
+        <td>
+          {{vendorFirstName}} {{vendorLastName}}
+        </td>
+        <td>
+          {{latitude}}
+        </td>
+        <td>
+          {{longitude}}
+        </td>
+        <td>
+          {{styleDescription}}
+        </td>
+        <td>
+          {{averageRating}}
+        </td>
+        <td>
+          <a href="/clientproject/{{_id}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+

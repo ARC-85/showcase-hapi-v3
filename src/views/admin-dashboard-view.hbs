@@ -1,0 +1,119 @@
+{{> menu-admin active="admindashboard"}}
+
+<div class="box box-link-hover-shadow">
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Total Users</th>
+      <th>Total Portfolios</th>
+      <th>Total Projects</th>
+      <th>Maximum Portfolios Per User</th>
+      <th>Maximum Portfolio User</th>
+      <th>Maximum Projects Per User</th>
+      <th>Maximum Project User</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          {{users.length}}
+        </td>
+        <td>
+          {{totalPortfolios}}
+        </td>
+        <td>
+          {{totalProjects}}
+        </td>
+        <td>
+          {{maxPortfolios}}
+        </td>
+        <td>
+          {{maxUser}}
+        </td>
+        <td>
+          {{maxProjects}}
+        </td>
+        <td>
+          {{maxProjectUser}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box box-link-hover-shadow">
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Maximum Cost Per Project (€)</th>
+      <th>Maximum Cost User</th>
+      <th>Maximum Area Per Project (sq. meters)</th>
+      <th>Maximum Area User</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          {{maxCost}}
+        </td>
+        <td>
+          {{maxCostUser}}
+        </td>
+        <td>
+          {{maxArea}}
+        </td>
+        <td>
+          {{maxAreaUser}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<section class="section">
+<div class="box box-link-hover-shadow">
+<form action="/userstats" method="POST">
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Retrieve User Stats</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter user email" name="userEmail">
+      </div>
+    </div>
+  </div>
+  <button class="button is-link">Retrieve Stats</button>
+</form>
+</div>
+<div>
+  <table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>User Email</th>
+      <th>Total User Portfolios</th>
+      <th>Total User Projects</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          {{userEmail}}
+        </td>
+        <td>
+          {{userPortfolios.length}}
+        </td>
+        <td>
+          {{userProjects}}
+        </td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section class="section">
+  {{> list-users}}
+</section>

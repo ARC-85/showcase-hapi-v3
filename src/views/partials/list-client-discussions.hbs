@@ -1,0 +1,36 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Discussion Start Date</th>
+      <th>Vendor Name</th>
+      <th>Discussion Title</th>
+      <th>Discussion Details</th>
+      <th>Delete Discussion</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each discussions}}
+      <tr>
+        <td>
+          {{discussionDate}}
+        </td>
+        <td>
+          {{vendorFirstName}} {{vendorLastName}}
+        </td>
+        <td>
+          {{discussionTitle}}
+        </td>
+        <td>
+          <a href="/clientnotice/{{noticeid}}/clientanswers/{{_id}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/clientnotice/{{noticeid}}/deletediscussion/{{_id}}" class="ui icon button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

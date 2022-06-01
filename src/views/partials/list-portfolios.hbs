@@ -1,0 +1,34 @@
+<div class="box box-link-hover-shadow">
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Portfolio Title</th>
+      <th>Portfolio Category</th>
+      <th>Projects</th>
+      <th>Delete Portfolio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each portfolios}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{portfolioCategory}}
+        </td>
+        <td>
+          <a href="/portfolio/{{_id}}" class="button">
+              <i class="fas fa-folder-open"></i>
+         </a>
+        </td>
+        <td>
+          <a href="/dashboard/deleteportfolio/{{_id}}" class="button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

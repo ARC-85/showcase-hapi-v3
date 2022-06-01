@@ -1,0 +1,66 @@
+{{> menu active="vendornotices"}}
+
+<div id="mapid"></div>
+<style>
+#mapid { height: 400px; }
+</style>
+<script>
+var mymap = L.map('mapid').setView([54, -9], 6);
+  
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYXJjLTg1IiwiYSI6ImNrc2lxODd6bjI2bjIycW9kdnVobmx1bGIifQ.x1HZeMix4klmga6uDO_p6g'
+}).addTo(mymap);
+  
+{{#each notices}}
+  var marker = L.marker([{{noticeLatitude}}, {{noticeLongitude}}]).addTo(mymap);
+{{/each}}
+
+
+
+</script>
+
+<section class="section">
+<div class="box box-link-hover-shadow">
+<form action="/filternotices" method="POST">
+  <div class="field is-horizontal">
+    
+      <label class="label">Filter Notices By Category</label>
+    
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Category</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" name="noticeCategory">
+          <option value="Extensions">Extensions</option>
+          <option value="New Builds">New Builds</option>
+          <option value="Renovations">Renovations</option>
+          <option value="Landscaping">Landscaping</option>
+          <option value="Commercial">Commercial</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <button class="button is-link">Filter</button>
+    <a href="/vendornotices" class="button is-link">Clear Filter</a>
+  </div>
+</form>
+</div>
+</section>
+<div class="title">
+    List of All Client Notices
+  </div>
+<section class="section">
+  {{> list-all-notices}}
+</section>

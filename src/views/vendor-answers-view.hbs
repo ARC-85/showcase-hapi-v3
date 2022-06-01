@@ -1,0 +1,23 @@
+{{> menu }}
+
+<section class="section">
+  <div>
+    <a href="/vendornotice/{{notice._id}}" class="button is-link">Return to Notice Details</a>
+</div>
+</section>
+<div class="title">
+    {{notice.noticeTitle}}
+  </div>
+<section class="section">
+  <div class="title">
+    Add New Response to Discussion
+  </div>
+  {{> vendor-add-answer}}
+  </section>
+  
+  <section class="section">
+  <div class="title">
+    Previous Responses
+  </div>
+  {{> list-vendor-answers}}
+</section>

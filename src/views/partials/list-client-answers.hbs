@@ -1,0 +1,29 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Response Date</th>
+      <th>Responder Name</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each answers}}
+      <tr>
+        <td>
+          {{answerDate}}
+        </td>
+        <td>
+          {{userFirstName}} {{userLastName}}
+        </td>
+        <td>
+          {{answerContent}}
+        </td>
+        <td>
+          <a id="deleteanswertag" href="/clientdiscussion/{{discussionid}}/deleteanswer/{{_id}}" class="ui icon button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

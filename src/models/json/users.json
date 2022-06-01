@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "da43d7b4-919d-4457-9d86-14f06e0734f5"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "a63c6ffc-730d-4931-9c9f-59db7f4e4970"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "ee36de05-7c77-4b75-82d0-77d93864ae12"
+    },
+    {
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "_id": "39a0e9e7-4c73-447c-888f-9b74189d67d9"
+    },
+    {
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "_id": "249aa0c4-16c6-4d82-a904-54ba99471800"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "d123ba29-8b8e-4320-9155-2ccf68d36700"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "5ee92d5f-42b6-48dd-9418-cb7bd3081c3e"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "775a326a-3f8d-45f6-9e59-07b89045f9de"
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret",
+      "_id": "62d806e1-40ff-4034-97e8-ec2a1a159324"
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "Cameron",
+      "email": "andrew@email.com",
+      "password": "pass",
+      "_id": "73869da6-4289-4b9b-8fa3-b6feea8dbc53"
+    },
+    {
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "email": "admin@email.ie",
+      "password": "password",
+      "_id": "7776dedf-266f-4e07-ac7d-e1950c593799"
+    },
+    {
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "portfolios": [],
+      "_id": "8fa68003-07f0-4460-b894-a782b62b1b7e"
+    }
+  ]
+}

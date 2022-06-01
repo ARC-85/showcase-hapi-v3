@@ -1,0 +1,52 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Notice Date</th>
+      <th>Notice Poster</th>
+      <th>Notice Title</th>
+      <th>Category</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Project Style</th>
+      <th>Vendor Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each notices}}
+      <tr>
+        <td>
+          {{noticeDate}}
+        </td>
+        <td>
+          {{clientFirstName}} {{clientLastName}}
+        </td>
+        <td>
+          {{noticeTitle}}
+        </td>
+        <td>
+          {{noticeCategory}}
+        </td>
+        <td>
+          {{noticeLatitude}}
+        </td>
+        <td>
+          {{noticeLongitude}}
+        </td>
+        <td>
+          {{noticeStyle}}
+        </td>
+        <td>
+          {{vendorCategory}}
+        </td>
+        <td>
+          <a href="/vendornotice/{{_id}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+

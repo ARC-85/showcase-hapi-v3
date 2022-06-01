@@ -1,0 +1,119 @@
+{{> menu}}
+
+<section class="section">
+  <div class="title">
+    {{notice.noticeTitle}}
+  </div>
+</section>
+
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          Notice Title
+        </td>
+        <td>
+          {{notice.noticeTitle}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Notice Date
+        </td>
+        <td>
+          {{notice.noticeDate}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Posted By
+        </td>
+        <td>
+          {{notice.clientFirstName}} {{notice.clientLastName}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Latitude
+        </td>
+        <td>
+          {{notice.noticeLatitude}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Longitude
+        </td>
+        <td>
+          {{notice.noticeLongitude}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Category
+        </td>
+        <td>
+          {{notice.noticeCategory}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Style
+        </td>
+        <td>
+          {{notice.noticeStyle}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Vendor Category
+        </td>
+        <td>
+          {{notice.vendorCategory}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Detailed Request
+        </td>
+        <td>
+          {{notice.request}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+
+<section id="creatediscussionsection" class="section">
+  <div class="title">
+    Create Discussion
+  </div>
+  {{> add-discussion}}
+</section>
+
+<section id="listdiscussionsection" class="section">
+  <div class="title">
+    Access Your Discussion 
+  </div>
+ {{> list-vendor-discussions}}
+</section>
+
+<script>
+  
+
+  var vendorDiscussionLength = {{discussions.length}};
+  if (vendorDiscussionLength > 0) {
+    document.getElementById("creatediscussionsection").style.display="none";
+    document.getElementById("listdiscussionsection").style.display="";
+  } else {
+    document.getElementById("creatediscussionsection").style.display="";
+    document.getElementById("listdiscussionsection").style.display="none";
+  }
+
+
+</script>

@@ -1,0 +1,52 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Review Date</th>
+      <th>Review Title</th>
+      <th>Reviewer Name</th>
+      <th>Rating</th>
+      <th>Comments</th>
+      <th>Responder Name</th>
+      <th>Reply</th>
+      <th>Visit Project</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each reviews}}
+      <tr>
+        <td>
+          {{reviewDate}}
+        </td>
+        <td>
+          {{reviewTitle}}
+        </td>
+        <td>
+          {{clientFirstName}}
+        </td>
+        <td>
+          {{rating}}
+        </td>
+        <td>
+          {{comment}}
+        </td>
+        <td>
+          {{vendorFirstName}}
+        </td>
+        <td>
+          {{reply}}
+        </td>
+        <td>
+          <a href="/clientproject/{{projectid}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/reviews/deletereview/{{_id}}" class="button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

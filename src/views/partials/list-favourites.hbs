@@ -1,0 +1,40 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Project Title</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Project Style</th>
+      <th>Details</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each favourites}}
+      <tr>
+        <td>
+          {{favouriteProjectTitle}}
+        </td>
+        <td>
+          {{favouriteLatitude}}
+        </td>
+        <td>
+          {{favouriteLongitude}}
+        </td>
+        <td>
+          {{favouriteStyleDescription}}
+        </td>
+        <td>
+          <a href="/clientproject/{{projectid}}" class="ui icon button">
+            <i class="fas fa-folder-open"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/favourites/deletefavourite/{{_id}}" class="button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

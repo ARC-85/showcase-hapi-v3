@@ -1,0 +1,92 @@
+{{> menu-client}}
+
+<section class="section">
+  <div class="title">
+   Notice Title: {{notice.noticeTitle}}
+  </div>
+</section>
+
+<section class="section">
+<div class="title">
+    Update Notice 
+  </div>
+<form class="box" action="/updatenotice/{{notice._id}}" method="POST">
+  <label class="label">Update Notice Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Notice Title</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Notice Title" value="{{notice.noticeTitle}}" name="noticeTitle">
+      </div>
+      <div class="field-label is-normal">
+      <label class="label">Category</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="select is-rounded">
+        <select class="is-hovered" value="{{notice.noticeCategory}}" name="noticeCategory">
+          <option value="Extensions">Extensions</option>
+          <option value="New Builds">New Builds</option>
+          <option value="Renovations">Renovations</option>
+          <option value="Landscaping">Landscaping</option>
+          <option value="Commercial">Commercial</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Latitude</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Latitude" value="{{notice.noticeLatitude}}" name="noticeLatitude">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Longitude</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Longitude" value="{{notice.noticeLongitude}}" name="noticeLongitude">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Style of Design</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Style (e.g. Modern)" value="{{notice.noticeStyle}}" name="noticeStyle">
+      </div>
+      <div class="field-label is-normal">
+        <label class="label">Vendor Category</label>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Vendor Category (e.g. Architects)" value="{{notice.vendorCategory}}" name="vendorCategory">
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Description of Request</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Description of Your Request" value="{{notice.request}}" name="request">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Notice</button>
+</form>
+</section>
+
+<section id="listdiscussionsection" class="section">
+  <div class="title">
+    Access Discussions 
+  </div>
+ {{> list-client-discussions}}
+</section>
